@@ -2,12 +2,12 @@
 apiVersion: mysql.sql.crossplane.io/v1alpha1
 kind: ProviderConfig
 metadata:
-  name: default
+  name: crossplane-system
 spec:
   credentials:
     source: MySQLConnectionSecret
     connectionSecretRef:
-      namespace: default
+      namespace: crossplane-system
       name: db-conn
   # tls one of preferred(default), skip-verify, or true
   tls: skip-verify
