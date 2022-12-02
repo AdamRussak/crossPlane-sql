@@ -5,7 +5,7 @@ metadata:
 spec:
   forProvider:
     passwordSecretRef:
-      name: test
+      name: example-pw
       namespace: default
       key: test1234
     resourceOptions:
