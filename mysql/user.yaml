@@ -6,7 +6,7 @@ spec:
   forProvider:
     passwordSecretRef:
       name: test
-      namespace: crossplane-system
+      namespace: default
       key: test1234
     resourceOptions:
       maxQueriesPerHour: 1000
@@ -15,4 +15,4 @@ spec:
       maxUserConnections: 10
   writeConnectionSecretToRef:
     name: test-connection-secret
-    namespace: crossplane-system
+    namespace: default
