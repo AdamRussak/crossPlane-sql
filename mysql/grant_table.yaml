@@ -5,7 +5,6 @@ metadata:
 spec:
   forProvider:
     privileges:
-      - DROP
       - INSERT
       - SELECT
     table: "*"
@@ -21,7 +20,6 @@ metadata:
 spec:
   forProvider:
     privileges:
-      - DROP
       - INSERT
       - SELECT
     table: "*"
