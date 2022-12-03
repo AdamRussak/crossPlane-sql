@@ -8,7 +8,7 @@ spec:
       - DROP
       - INSERT
       - SELECT
-    table: treafikAccessList_tbl
+    table: test_table
     userRef:
       name: test
     databaseRef:
