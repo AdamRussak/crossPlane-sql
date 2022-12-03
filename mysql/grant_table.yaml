@@ -1,17 +1,17 @@
-# apiVersion: mysql.sql.crossplane.io/v1alpha1
-# kind: Grant
-# metadata:
-#   name: example-grant-table
-# spec:
-#   forProvider:
-#     privileges:
-#       - INSERT
-#       - SELECT
-#     table: "*"
-#     userRef:
-#       name: my-user
-#     databaseRef:
-#       name: grafana
+apiVersion: mysql.sql.crossplane.io/v1alpha1
+kind: Grant
+metadata:
+  name: example-grant-table
+spec:
+  forProvider:
+    privileges:
+      - INSERT
+      - SELECT
+    table: "*"
+    userRef:
+      name: my-user
+    databaseRef:
+      name: grafana
 ---
 apiVersion: mysql.sql.crossplane.io/v1alpha1
 kind: Grant
@@ -24,7 +24,6 @@ spec:
       - SELECT
     table: "*"
     userRef:
-      - name: test
-      - name: my-user
+      name: test
     databaseRef:
       name: grafana
