@@ -7,7 +7,7 @@ spec:
   credentials:
     source: MySQLConnectionSecret
     connectionSecretRef:
-      namespace: default
-      name: db-conn
+      namespace: crossplane-system
+      name: crossplane-secret
   # tls one of preferred(default), skip-verify, or true
   tls: preferred
