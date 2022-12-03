@@ -1,28 +1,28 @@
-apiVersion: mysql.sql.crossplane.io/v1alpha1
-kind: Grant
-metadata:
-  name: example-grant
-spec:
-  forProvider:
-    privileges:
-      - DROP
-      - CREATE ROUTINE
-      - EVENT
-    userRef:
-      name: my-user
-    databaseRef:
-      name: grafana
----
-apiVersion: mysql.sql.crossplane.io/v1alpha1
-kind: Grant
-metadata:
-  name: test-user-grant
-spec:
-  forProvider:
-    privileges:
-      - INSERT
-      - SELECT
-    userRef:
-      name: test
-    databaseRef:
-      name: grafana
+# apiVersion: mysql.sql.crossplane.io/v1alpha1
+# kind: Grant
+# metadata:
+#   name: example-grant
+# spec:
+#   forProvider:
+#     privileges:
+#       - DROP
+#       - CREATE ROUTINE
+#       - EVENT
+#     userRef:
+#       name: my-user
+#     databaseRef:
+#       name: grafana
+# ---
+# apiVersion: mysql.sql.crossplane.io/v1alpha1
+# kind: Grant
+# metadata:
+#   name: test-user-grant
+# spec:
+#   forProvider:
+#     privileges:
+#       - INSERT
+#       - SELECT
+#     userRef:
+#       name: test
+#     databaseRef:
+#       name: grafana
