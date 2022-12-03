@@ -8,7 +8,7 @@ spec:
       - DROP
       - INSERT
       - SELECT
-    table: test_table
+    table: "*"
     userRef:
       name: my-user
     databaseRef:
