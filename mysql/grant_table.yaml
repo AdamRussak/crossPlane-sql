@@ -10,6 +10,6 @@ spec:
       - SELECT
     table: test_table
     userRef:
-      name: test
+      name: my-user
     databaseRef:
       name: grafana

@@ -9,6 +9,6 @@ spec:
       - CREATE ROUTINE
       - EVENT
     userRef:
-      name: test
+      name: my-user
     databaseRef:
       name: grafana
