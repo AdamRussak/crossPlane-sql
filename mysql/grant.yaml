@@ -20,9 +20,8 @@ metadata:
 spec:
   forProvider:
     privileges:
-      - DROP
-      - CREATE ROUTINE
-      - EVENT
+      - INSERT
+      - SELECT
     userRef:
       name: test
     databaseRef:
