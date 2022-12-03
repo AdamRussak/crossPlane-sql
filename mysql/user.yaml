@@ -13,3 +13,19 @@ spec:
   writeConnectionSecretToRef:
     name: connection-secret
     namespace: default
+---
+apiVersion: mysql.sql.crossplane.io/v1alpha1
+kind: User
+metadata:
+  name: test
+spec:
+  providerConfigRef:
+    name: default
+  forProvider:
+    passwordSecretRef:
+      name: test-user-secret
+      namespace: default
+      key: password
+  writeConnectionSecretToRef:
+    name: connection-secret-for-test
+    namespace: default

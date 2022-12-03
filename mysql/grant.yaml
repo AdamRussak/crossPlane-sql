@@ -12,3 +12,18 @@ spec:
       name: my-user
     databaseRef:
       name: grafana
+---
+apiVersion: mysql.sql.crossplane.io/v1alpha1
+kind: Grant
+metadata:
+  name: test-user-grant
+spec:
+  forProvider:
+    privileges:
+      - DROP
+      - CREATE ROUTINE
+      - EVENT
+    userRef:
+      name: test
+    databaseRef:
+      name: grafana
